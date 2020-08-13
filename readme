@@ -1,0 +1,63 @@
+-This is an instructional manual on how to use myshell-
+
+
+Starting up:
+To begin please enter the directory which the myshell file is in into the terminal.
+Then enter python3 myshell.py and the shell should start.
+
+
+Commands:
+(This is a list of commands which the user can enter in the shell.)
+
+
+cd - Entering cd followed by a directory will change the current default directory to the chosen one entered.
+     e.g. cd /home/ubuntu/Documents
+     Entring cd with no directory will display the current working directory for the shell.
+
+
+clr - Entering clr will clr the current screen.
+      Note if you want to revisit previous commands you can scroll up on the terminal.
+
+
+*dir - Entering dir will display the contents of the directory
+
+
+*environ - Entering environ will display all of the environment strings
+
+
+*echo - Entering echo along with a series of letters will display those letters with any excess blank spaces being stripped.
+       e.g. input: echo d ddd  dd             d
+            output: d ddd dd d
+
+
+*help - Entering help will display this file in the terminal.
+        Press the <Enter> key to continue through in the terminal.
+
+
+pause - Entering pause will stop the shell from processing any key entries.
+        To continue after pausing just hit the <Enter> key.
+
+
+quit - Entering quit will exit out of the shell
+
+
+i/o-redirection - Entering any of the * commands shown above followed by > or >> and finally a name for a file will change the destination of the output of the command.
+                  (>) will either create a new or rewrite an existing file
+                  (>>) will either create a new or add to an existing file
+                  e.g. dir > test.txt
+                  This will create a .txt file called test and put the contents of the directory into it.
+
+
+concepts:
+(This section contains the basic concepts for some shell commands)
+
+
+output redirection - Times may arise when you need to store the information which you get from the commands in a shell. output redirection makes it possible for you to take the outputs from these commands and write them to a file.
+                     The shell runs the command but instead of displaying it to the user, it gets told to write it to the requested file.
+
+
+program environment - This maps the string environment.
+                      e.g. environ["Documents"] will display the pathname of the Documents directory.
+
+
+background program execution - This is a program that runs and executes in the background while the user is doing other things.
